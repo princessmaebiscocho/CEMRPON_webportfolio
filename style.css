@@ -487,7 +487,7 @@ section{
 
 
 
-/* services section css ------------------------------------------------------*/
+/* projects section css ------------------------------------------------------*/
 .main-text{
     width: 100%;
     text-align: center;
@@ -534,19 +534,7 @@ section{
     transform: translateY(-.7rem);
 }
 
-.service-icon{
-    border: 2px solid var(--hover-color);
-    padding: 2rem;
-    background: var(--bg-color);
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    border-radius: 50%;
-    position: relative;
-    color: var(--hover-color);
-    box-shadow: var(--neon-box-shadow);
-    outline: 3px solid var(--bg-color);
-}
+
 
 .service-box h3{
     margin-top: 10px;
@@ -563,20 +551,64 @@ section{
 }
 
 
-/* Arrange services in three vertical columns */
-#services {
+/* Arrange projects in three vertical columns */
+#projects{
     display: flex;
-    justify-content: center; /* center the columns */
-    align-items: flex-start; /* align them at the top */
-    gap: 2rem; /* space between columns */
-    flex-wrap: wrap; /* wrap on smaller screens */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
-.section-services {
-    flex: 1 1 18rem; /* same as your service-box flex */
-    display: flex; 
+#projects .section-services{
+    flex: 1 1 18rem;
+    display: flex;
     justify-content: center;
 }
+
+.service-box{
+    position: relative;
+    overflow: hidden;
+}
+
+/* make image background */
+.project-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* dark overlay for readability */
+.service-box::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+/* bring text to front */
+.service-box i,
+.service-box h3,
+.service-box p,
+.service-box .btn-box{
+    position: relative;
+    z-index: 2;
+}
+
+.service-box{
+    height: 420px; /* same size for all */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
 
 
 /* skills section css ------------------------------------------------------*/
