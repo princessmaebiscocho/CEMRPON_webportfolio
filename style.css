@@ -857,32 +857,32 @@ section{
 
 /* 1st portfolio item */
 .port-box:nth-child(1) .port-image::after {
-    background-image: url("athena-2.jpg");
+    background-image: url("images/athena-2.jpg");
 }
 
 /* 2nd portfolio item */
 .port-box:nth-child(2) .port-image::after {
-    background-image: url("3-2.jpeg");
+    background-image: url("images/3-2.jpeg");
 }
 
 /* 3rd portfolio item */
 .port-box:nth-child(3) .port-image::after {
-    background-image: url("7.jpg");
+    background-image: url("images/7.jpg");
 }
 
 /* 4th portfolio item */
 .port-box:nth-child(4) .port-image::after {
-    background-image: url("4-2.jpg");
+    background-image: url("images/4-2.jpg");
 }
 
 /* 5th portfolio item */
 .port-box:nth-child(5) .port-image::after {
-    background-image: url("5-2.jpg");
+    background-image: url("images/5-2.jpg");
 }
 
 /* 6th portfolio item */
 .port-box:nth-child(6) .port-image::after {
-    background-image: url("6-2.jpg");
+    background-image: url("images/6-2.jpg");
 }
 
 
