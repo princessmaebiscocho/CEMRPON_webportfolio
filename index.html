@@ -131,9 +131,9 @@
         <div class="service-box">
 
             <!-- image -->
-            <img src="images/project1.jpg" class="project-img">
+            <img src="images/iot2.jpg" class="project-img">
 
-            <h3>Social Media Designs</h3>
+            <h3>Arduino</h3>
             <p>
                 A collection of social media graphics created using Canva.
                 Includes promotional posts, announcements, and creative layouts designed to engage audiences and maintain brand consistency.
@@ -148,9 +148,9 @@
         <div class="service-box">
 
             <!-- image -->
-            <img src="images/project2.jpg" class="project-img">
+            <img src="images/onweb.png" class="project-img">
 
-            <h3>Digital Posters</h3>
+            <h3>Online Website</h3>
             <p>
                 Various digital posters and branding materials developed for school and personal projects.
                 These designs focus on clear messaging, balanced layout, and strong visual impact.
@@ -349,18 +349,27 @@
         <h2>Contact Me</h2>
     </div>
 
-    <form action="#">
-        <input type="text" placeholder="Your Name">
-        <input type="text" placeholder="Your Email">
-        <input type="text" placeholder="Your Address">
-        <input type="number" placeholder="Phone Number">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/yourID" method="POST">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <input type="text" name="address" placeholder="Your Address">
+
+        <input type="number" name="phone" placeholder="Phone Number">
+
+        <textarea name="message" cols="30" rows="10"
+        placeholder="Your Message" required></textarea>
+
         <div class="btn-box formBtn">
             <button type="submit" class="btn">Send Message</button>
         </div>
         
     </form>
 </section>
+
 
 <!--footer website------------>
 <footer>
@@ -668,6 +677,16 @@ function confirmDownload() {
     return confirm("Are you sure you want to download my CV?");
 }
 </script>
+
+<div class="lightbox" id="lightbox">
+  <span class="close">&times;</span>
+  <img id="lightbox-img">
+  <div class="controls">
+    <span id="prev">&#10094;</span>
+    <span id="next">&#10095;</span>
+  </div>
+</div>
+
 
 
 </body>
